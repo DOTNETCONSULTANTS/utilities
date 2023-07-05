@@ -1,20 +1,19 @@
 ﻿@page "/encode"
 @using System.Globalization;
-@using MudBlazor
 @using TwoApps.Tools.ClientHost.Features;
 @inject EncodeViewModel ViewModel
 
-<h3>Encode/Decode text</h3>
+<h3>Encode + Decode text</h3>
 
-<div>
-    <MudTextField Label="Text to encode or decode" @bind-Value="ViewModel.Source" Variant="Variant.Text" Lines="5" />
+<div style="margin-top: 24px;">
+    <MudTextField Label="Text to encode or decode" @bind-Value="ViewModel.Source" Variant="Variant.Outlined" Lines="5" />
 </div>
 
-<div>
-    <button @onclick="ViewModel.Base64Encode">Encode</button>
-    <button @onclick="ViewModel.Base64Decode">Decode</button>
-</div>
+<p>
+    <MudButton @onclick="ViewModel.Base64Encode">Encode</MudButton>
+    <MudButton @onclick="ViewModel.Base64Decode">Decode</MudButton>
+</p>
 
-<div>
-    <MudTextField Label="Result" @bind-Value="ViewModel.Target" Variant="Variant.Text" ReadOnly=true Lines="5" />
-</div>
+<p>
+    <MudTextField @bind-Value="ViewModel.Target" Variant="Variant.Text" ReadOnly=true Lines="5" />
+</p>

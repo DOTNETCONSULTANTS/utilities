@@ -1,3 +1,8 @@
 ﻿@page "/"
+@inject NavigationManager NavigationManager
 
-<h1>Hello, world!</h1>
+<h1>TwoApps secure tools</h1>
+
+<div style="margin-top: 24px;">
+    <MudButton Variant="Variant.Filled" @onclick="@(()=>NavigationManager.NavigateTo("/encode"))">Encode + Decode text</MudButton>
+</div>
