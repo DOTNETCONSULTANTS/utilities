@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName></AssemblyName>
+    <RootNamespace></RootNamespace>
+    <OutputType>Exe</OutputType>
+    <NukeTelemetryVersion>1</NukeTelemetryVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+     <NukeRootDirectory>..</NukeRootDirectory> 
+     <NukeScriptDirectory>..</NukeScriptDirectory> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nuke.Common" Version="6.3.0" />
+  </ItemGroup>
+  
+</Project>
