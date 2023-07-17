@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
 using TwoApps.Tools.ClientHost;
 using TwoApps.Tools.ClientHost.Features;
+using TwoApps.Tools.ClientHost.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -13,5 +14,6 @@ builder.Services.AddMudServices();
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
 builder.Services.AddScoped<EncodeViewModel>();
+builder.Services.AddScoped<ClipboardService>();
 
 await builder.Build().RunAsync();

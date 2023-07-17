@@ -5,15 +5,13 @@
 
 <h3>Encode + Decode text</h3>
 
-<div style="margin-top: 24px;">
-    <MudTextField Label="Text to encode or decode" @bind-Value="ViewModel.Source" Variant="Variant.Outlined" Lines="5" />
+<div style="max-width: 800px;">
+    <div style="margin-top: 24px;">
+        <MudTextField Label="Text to encode or decode" @bind-Value="ViewModel.Source" Variant="Variant.Outlined" Lines="5" />
+    </div>
+    <MudStack Row="true">
+        <MudButton @onclick="ViewModel.Base64Encode">Encode</MudButton>
+        <MudButton @onclick="ViewModel.Base64Decode">Decode</MudButton>
+    </MudStack>
+    <MudTextField @bind-Value="ViewModel.Target" Variant="Variant.Text" ReadOnly="true" Lines="5" />
 </div>
-
-<p>
-    <MudButton @onclick="ViewModel.Base64Encode">Encode</MudButton>
-    <MudButton @onclick="ViewModel.Base64Decode">Decode</MudButton>
-</p>
-
-<p>
-    <MudTextField @bind-Value="ViewModel.Target" Variant="Variant.Text" ReadOnly=true Lines="5" />
-</p>
