@@ -1,9 +1,9 @@
 ﻿using System.Text;
 using CommunityToolkit.Mvvm.ComponentModel;
-using TwoApps.Tools.ClientHost.Services;
+using TwoApps.Tools.SecureUtilitiesClient.Services;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace TwoApps.Tools.ClientHost.Features;
+namespace TwoApps.Tools.SecureUtilitiesClient.Features;
 
 public partial class EncodeViewModel : ObservableObject
 {

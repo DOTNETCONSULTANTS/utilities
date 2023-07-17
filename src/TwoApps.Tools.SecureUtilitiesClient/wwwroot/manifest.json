@@ -1,5 +1,5 @@
 {
-  "name": "TwoApps.Tools.ClientHost",
+  "name": "TwoApps.Tools.SecureUtilitiesClient",
   "short_name": "TwoApps Tools",
   "start_url": "./",
   "display": "standalone",

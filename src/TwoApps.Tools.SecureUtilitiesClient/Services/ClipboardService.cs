@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.JSInterop;
 
-namespace TwoApps.Tools.ClientHost.Services;
+namespace TwoApps.Tools.SecureUtilitiesClient.Services;
 
 public sealed class ClipboardService
 {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
-using TwoApps.Tools.ClientHost;
-using TwoApps.Tools.ClientHost.Features;
-using TwoApps.Tools.ClientHost.Services;
+using TwoApps.Tools.SecureUtilitiesClient;
+using TwoApps.Tools.SecureUtilitiesClient.Features;
+using TwoApps.Tools.SecureUtilitiesClient.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
